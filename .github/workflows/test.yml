@@ -1,0 +1,17 @@
+name: Formula
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  install:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install from this tap and run the formula test
+        run: |
+          brew tap sunlover7/agentlinkops "$PWD"
+          brew install --formula sunlover7/agentlinkops/agentlinkops
+          brew test sunlover7/agentlinkops/agentlinkops
+          agentlinkops --help | head -1
