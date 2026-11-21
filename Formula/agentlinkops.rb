@@ -6,8 +6,8 @@ require "language/node"
 class Agentlinkops < Formula
   desc "Backlink ledger and agent skill pack for AgentLinkOps (MCP, CLI, HTTP)"
   homepage "https://agentlinkops.com/"
-  url "https://registry.npmjs.org/agentlinkops/-/agentlinkops-0.6.18.tgz"
-  sha256 "66d0728451e4f873384066626eafea01042d4e836315d6377e5b16c1a48178c4"
+  url "https://registry.npmjs.org/agentlinkops/-/agentlinkops-0.6.20.tgz"
+  sha256 "1aac72e6bd786ea24bcfc4e7cc17a2b5c8dd6d6941d3bd60ae63565185382349"
   license "Apache-2.0"
 
   depends_on "node"
